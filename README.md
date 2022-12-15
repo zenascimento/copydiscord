@@ -1,1 +1,1 @@
-# copydiscord
+# cheapcopydiscord
