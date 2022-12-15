@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: luckiest guy;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+h2, p {
+    font-family: open sans;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px;
+}
+
+main {
+    margin-top: 50px;
+    margin-bottom: -150px;
+}
+
+#container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px repeat(4, 500px);
+    grid-template-areas: "section1 section1" "section2 section2" "section3 section3" "section4 section4";
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+}
+
+.banner {
+    background-image: url(/img/Header\ Background.png);
+    background-size: cover;
+    height: 400px;
+}
+
+.header {
+    display: flex;
+    gap: 100px;
+    padding: 50px;
+}
+
+.div1 { 
+    border-radius: 50px;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.div2 {
+    color: white;
+    border-radius: 50px;
+    background-color: black;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.section1 {
+    grid-area: section1;
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+.section2 {
+    grid-area: section2;
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+
+.section3 {
+    grid-area: section3;
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+
+.section4 {
+    grid-area: section4;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
